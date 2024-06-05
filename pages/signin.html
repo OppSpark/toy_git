@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>로그인 페이지</h1>
+    <div>
+        <p>ID <input type="text" id="ID" placeholder="ID를 입력하세요"></p>
+        <p>PW <input type="password" id="PW" placeholder="PASSWORD를 입력하세요"></p>
+        <p><input id="loginbutton" value="로그인" type="button" name="로그인"></p>
+    </div>
+    <script>
+        document.getElementById('loginbutton').addEventListener('click', function() {
+            var ID = document.getElementById('ID').value;
+            var PW = document.getElementById('PW').value;
+
+            if (ID && PW) {
+                window.location.href = '/main.html';
+            } else {
+                alert('ID와 PASSWORD를 입력하세요.');
+            }
+        });
+    </script>
+</body>
+</html>
