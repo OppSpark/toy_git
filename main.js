@@ -18,7 +18,7 @@ app.listen(3000, ()=>{ // 서버 생성, 포트번호:3000
     //로그인
     app.get('/signin',(req,res)=>{
         console.log(' 로그인 페이지에 대한 요청');
-        res.sendFile(__dirname+'/pages/register.html');
+        res.sendFile(__dirname+'/pages/signin.html');
     })
 
     //메인 페이지
