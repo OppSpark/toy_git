@@ -22,6 +22,14 @@ app.listen(3000, ()=>{ // 서버 생성, 포트번호:3000
     })
 
     //메인 페이지
+    app.get('/',(req,res)=>{
+        console.log('루트에 대한 요청');
+        res.sendFile(__dirname+'/pages/main.html');
+    })
 
     //사용자 페이지
+    app.get('/userinfo',(req,res)=>{
+        console.log('루트에 대한 요청');
+        res.sendFile(__dirname+'/pages/userinfo.html');
+    })
 }) 
